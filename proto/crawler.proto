@@ -1,0 +1,18 @@
+syntax = "proto3";
+package crawler;
+
+option go_package = "github.com/nishenghan/go-web-crawler/proto;proto";
+
+message CrawlRequest {
+  string url = 1;
+}
+
+message CrawlResult {
+  string url = 1;
+  repeated string links = 2;
+}
+
+service Crawler {
+  // Fetches a page and returns all discovered links
+  rpc FetchAndParse(CrawlRequest) returns (CrawlResult);
+}
