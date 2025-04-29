@@ -1,0 +1,30 @@
+# Binaries and build outputs
+debug.log
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Coverage and profiling
+coverage.out
+*.out
+
+# Generated files (optional, commit if desired)
+# proto/*.pb.go
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Temporary files
+*.tmp
+
+# Dependency directories
+/vendor/
+
+# Environment files
+.env
